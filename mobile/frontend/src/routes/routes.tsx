@@ -1,6 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SurveyList from '../views/SurveyList/SurveyList';
+import SurveyList from '../views/SurveysList/SurveysList';
 
 const Stack = createNativeStackNavigator();
 
