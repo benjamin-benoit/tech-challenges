@@ -13,7 +13,9 @@ export const SurveyList = () => {
       {isLoading ? <Text>Loading...</Text> : null}
       {error ? <Text>{error}</Text> : null}
       {data
-        ? data?.map((survey: Survey) => <SurveyCard key={survey.id} name={survey.name} />)
+        ? data?.map((survey: Survey) => (
+            <SurveyCard key={survey.id} id={survey.id} name={survey.name} />
+          ))
         : null}
     </ScrollView>
   );
